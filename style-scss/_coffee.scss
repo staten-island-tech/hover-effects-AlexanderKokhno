@@ -1,0 +1,35 @@
+
+@import "_variables.scss";
+
+.coffee{
+    height:30rem;
+    position: relative;
+}
+
+.coffee-picture{
+    height: 100%;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    transition: all 0.3s;
+}
+
+.coffee-header{
+    font-size: 3rem;
+    opacity: 0;
+    color: white;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+.coffee:hover .coffee-picture{
+    filter: grayscale(90%);
+
+}
+
+.coffee:hover .coffee-header{
+    opacity: 1;
+    top: 50%;
+}

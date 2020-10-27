@@ -1,0 +1,15 @@
+
+@import "_variables.scss";
+
+.peppermint-text {
+    background-image:url("./images/peppermint.jpg");
+    background-position: center;
+    font-size: 5rem;
+    -webkit-background-clip: text;
+    transition:all 0.3s;
+}  
+
+.peppermint-text:hover{
+    transform: skewY(-10deg);
+    letter-spacing: 3rem;
+}
